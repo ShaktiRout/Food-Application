@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Restaurant</title>
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="home.html">
+      <h2>Online Restaurant</h2>
+    </a>
+    <div class="searchbox">
+      <form>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input id="search-item" type="text" placeholder="search item..." onkeydown="searchFood()">
+      </form>
+    </div>
+    <div class="right">
+      <ul>
+        <li><a href="home.html" id="home">Home</a></li>
+        <li><a href="register.html" id="register">Register</a></li>
+        <li><a href="login.html" id="login">Login</a></li>
+      </ul>
+    </div>
+    <a href="cart.html">
+      <div class="cart">
+        <i class="bi bi-cart2"></i>
+        <div id="cartAmount" class="cartAmount">0</div>
+      </div>
+    </a>
+
+  </div>
+
+  <div class="shop" id="shop">
+
+
+  </div>
+
+</body>
+<script src="src/Data.js"></script>
+<script src="src/main.js"></script>
+
+</html>

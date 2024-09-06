@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Restaurant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box0">
+        <p><a href="home.html"><i class="fa fa-times" aria-hidden="true" id="cross"></i></a></p>
+      </div>
+      <div class="box1">
+        <h1>Login</h1>
+      </div>
+      <div class="box2">
+        <form action="login.html" id="loginform" method="post">
+          <div id="message" class="hiden">Login successful</div> 
+          <div class="input-control">
+            <label for="username">Username</label><br>
+            <input type="text" id="username" placeholder="enter username" /><br>
+            <div class="error"></div>
+          </div>
+          <div class="input-control">
+            <label for="password">Password</label><br>
+            <input type="password" id="password" placeholder="enter password"/><br>
+            <div class="error"></div>
+          </div>
+          <div>
+            <input type="submit" value="submit" id="submit"/>
+            <p>Forgot password&nbsp;&nbsp;<span><a href="#">click here</a></span></p>
+          </div>
+        </form>
+      </div>
+      <div class="box3">
+        <p>Create New Account&nbsp;&nbsp;<span><a href="register.html">Register</a></span></p>
+      </div>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>

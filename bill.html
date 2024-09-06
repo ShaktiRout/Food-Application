@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Restaurant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="register.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    
+</head>
+<body>
+    <div class="container">
+        <form id="form" action="/">
+            <div class="box0">
+                <p><a href="cart.html"><i class="fa fa-times" aria-hidden="true" id="cross"></i></a></p>
+            </div>
+            <h1>Billing</h1>
+            <div id="message" class="hiden">Payment Done</div> 
+
+            <div class="input-control">
+                <label for="amount">Total Amount</label>
+                <input id="amount" name="amount" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="cardholder">Card Holder</label>
+                <input id="cardholder" name="cardholder" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="cardno">Card Number</label>
+                <input id="cardno" name="cardno" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="expiry">Expiry Date</label>
+                <input id="expiry"name="expiry" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="cvc">CVC</label>
+                <input id="cvc" name="cvc" type="text">
+                <div class="error"></div>
+            </div>
+            <button type="submit">Pay Now</button>
+            <div><p>Shop more!<span><a href="login.html">Home</a></span></p></div>
+        </form>
+    </div>
+    <script defer src="bill.js"></script>
+</body>
+</html>
