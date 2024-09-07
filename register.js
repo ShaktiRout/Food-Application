@@ -50,7 +50,9 @@ const validateInputs = () => {
         setError(email, 'Email is required');
     } else if (!isValidEmail(emailValue)) {
         setError(email, 'Provide a valid email address');
-    } else {
+    } else if(emailValue === localStorage.getItem("email")){
+        alert("Already Registered mail ID!")
+    }else{
         setSuccess(email);
         var mail = true;
     }

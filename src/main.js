@@ -1,3 +1,24 @@
+/*---------on login-----on logout---------*/
+ 
+function checkLogin(){
+  const x = document.getElementById("login");
+  if(x.innerHTML === "Login"){
+      const loginTrue = localStorage.getItem("login");
+      if(loginTrue === "true"){
+        x.innerHTML = "Logout";
+        x.href = "home.html";
+        x.addEventListener("click", ()=> {
+          alert("You are Logged Out!")
+          x.innerHTML = "Login";
+          x.href = "home.html";
+          localStorage.removeItem("login");
+        })
+
+      }
+    }
+}
+
+
 let shop = document.getElementById("shop");
 
 /**

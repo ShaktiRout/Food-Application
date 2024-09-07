@@ -182,7 +182,14 @@ let clearCart = () => {
 };
 
 let checkOut = () => {
-window.location.href = "bill.html";
+  const loginTrue = localStorage.getItem("login")
+  if (loginTrue === "true"){
+    window.location.href = "bill.html";
+  }
+  else{
+    alert("Login to Pay!")
+    window.location.href = "home.html";
+  }
 }
 
 

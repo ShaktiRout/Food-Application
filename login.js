@@ -56,7 +56,10 @@ const validateInputs = () => {
     
     if(usernameValue === user && passwordValue === pass){
         const message = document.getElementById('message');
-
+        localStorage.setItem("login", "true");
+        // const loginEl = document.getElementById("login");
+        // alert(loginEl);
+        // loginEl.innerHTML="logout";
         message.classList.remove('hiden');
         message.classList.add('show');
     }
